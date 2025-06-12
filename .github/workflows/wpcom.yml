@@ -3,7 +3,7 @@ name: Publish Website
 on:
   push:
     branches:
-      - main
+      - trunk
   workflow_dispatch:
 jobs:
   Publish-Website:
@@ -15,4 +15,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wpcom
-          path: nonexistingfolder
+          path: |
+            .
+            !.git*
+          retention-days: 1
