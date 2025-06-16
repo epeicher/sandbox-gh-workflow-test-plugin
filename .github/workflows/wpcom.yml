@@ -18,4 +18,4 @@ jobs:
           path: |
             .
             !.git*
-          retention-days: 1
+          retention-days: 2
