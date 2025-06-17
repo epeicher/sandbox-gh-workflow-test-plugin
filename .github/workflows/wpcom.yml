@@ -16,4 +16,4 @@ jobs:
         with:
           name: wpcom
           path: nonexistingfolder
-          retention-days: 1
+          retention-days: 2
